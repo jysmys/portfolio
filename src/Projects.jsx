@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ProjectCard from "./ProjectCard";
 import axios from "axios";
 
 class Projects extends Component {
@@ -7,7 +8,7 @@ class Projects extends Component {
   };
 
   componentDidMount() {
-    axios.get("./src/data/projects.json").then((response) => {
+    axios.get("./src/data/project.json").then((response) => {
       this.setState({
         projects: response.data,
       });
@@ -22,7 +23,7 @@ class Projects extends Component {
       projectsList = projects.map((project) => {
         return (
           <div id={"project-" + project.id} key={project.id}>
-            <h3 className="ui header">{project.name}</h3>
+            <ProjectCard project={project} />
           </div>
         );
       });
@@ -33,7 +34,7 @@ class Projects extends Component {
         <h2 id="projects-header" className="ui header">
           My Projects
         </h2>
-        {projectsList}
+        <div className="ui stackable four column grid">{projectsList}</div>
       </div>
     );
   }
