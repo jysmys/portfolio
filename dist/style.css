@@ -1,26 +1,16 @@
-@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&family=Josefin+Sans&display=swap");
 
 h1 {
   font-size: calc(20px + 10vh);
-  /* font-size: 75px; */
   letter-spacing: 0.2em;
   line-height: calc(20px + 20vh);
-  /*   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
-    0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
-  color: #fccaff; */
   text-shadow: 0 0 5px #fe8692, 0 0 15px #fe8692, 0 0 20px #fe8692,
     0 0 40px #e4747f, 0 0 60px #ff0000, 0 0 10px #e4747f, 0 0 98px #e4747f;
   color: #ffa8b0;
-  /* color: #e4747f; */
-  /* font-family: "Sacramento", cursive; */
   font-family: "Baloo Bhaina 2", cursive;
   text-align: center;
   line-height: 140%;
 }
-/* .ui.inverted.menu .item {
-  color: #ffa8b0;
-} */
 p {
   font-size: 25px;
   letter-spacing: 0.05em;
@@ -32,6 +22,9 @@ p#footer {
   color: rgb(78, 78, 78);
   font-size: 15px;
 }
+#hello {
+  align-items: center;
+}
 #about-header,
 #projects-header {
   font-size: 45px;
@@ -41,8 +34,9 @@ p#footer {
   color: rgb(167, 167, 167);
   font-family: "Baloo Bhaina 2", cursive;
   text-align: center;
+  margin-top: 20px;
   padding-bottom: 40px;
-  padding-top: 50px;
+  padding-top: 0;
 }
 .ui.menu.fixed {
   font-size: medium;
@@ -69,14 +63,17 @@ footer {
 .main.container {
   margin-top: 4em;
   margin-bottom: 4em;
+  padding: 2vw;
+  justify-content: center;
+  align-items: center;
 }
 
 body {
-  margin-top: 4em;
-  padding: 2vw;
+  margin-top: 2em;
   display: flex;
+  margin-left: 15%;
+  margin-right: 15%;
   justify-content: center;
-  align-items: center;
   height: 100vh;
   background: #222;
   background-image: repeating-linear-gradient(
@@ -86,4 +83,29 @@ body {
     rgba(0, 0, 0, 0.8) 13px,
     transparent 13px
   );
+}
+.projectlist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: -10px;
+}
+.projectlist > * {
+  flex: 1 1 160px;
+  margin: 20px;
+}
+.ui.card {
+  background: #222;
+  box-shadow: 0 1px 3px 0 #4d4d4e, 0 0 0 1px #4d4d4e;
+  border-top: 1px solid rgba(34, 36, 38, 0.1);
+}
+.ui.card > .content > .description,
+.ui.card > .content > .header {
+  color: rgb(192, 192, 192);
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+}
+.ui.card > .content > .header {
+  text-shadow: 0 0 5px #8d7779;
 }
