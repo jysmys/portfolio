@@ -121,8 +121,8 @@ footer {
 }
 .projectlist > *,
 .cvcard {
-  padding-bottom: 3em;
-  padding-right: 3em;
+  padding-bottom: 5em;
+  padding-right: 5em;
 }
 .projectlist > * {
   align-items: stretch;
@@ -141,6 +141,20 @@ img {
   border-radius: 15px 50px;
   border-color: #222;
   background-color: #222;
+}
+
+button:hover,
+img:hover {
+  width: 105%;
+  height: 105%;
+  padding: 0px;
+  border-radius: 15px 50px;
+  border-color: #222;
+  background-color: #222;
+}
+button:focus:valid {
+  border: none;
+  outline: none;
 }
 button {
   font-size: 15px;
