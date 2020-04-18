@@ -6,7 +6,10 @@
     "image": "http://om.svenskaspel.se/wp-content/uploads/2019/01/omslag_koncernen.jpg",
     "title": "Performance Engineer",
     "description": "expert to set up and execute tests to secure the new release of the licence company and the new platform of marketplace, play toghether. New performance platform developed and CI tests implemented with Locust.",
-    "tech": "Linux, Kafka, MongoDb, Swagger, Jenkins,Locust, jMeter, Grafana, Kibana",
+    "tech": {
+      "env": "Linux, Kafka, MongoDb, Swagger, Jenkins",
+      "tools": "Locust, jMeter, Grafana, Kibana"
+    },
     "time": "Sept 2018 - April 2020"
   },
   {
@@ -16,7 +19,10 @@
     "image": "https://secure.meetupstatic.com/photos/event/5/0/e/3/600_467720707.jpeg",
     "title": "Performance Engineer / APM",
     "description": "Responsible for launching and setting up performance tests for the startup company Doctrin's web application for patients and caregivers.",
-    "tech": "Linux, StarCounter, MongoDB, NodeJS, MS Visual Studio, MS Load Test, Fiddler, AppDynamics",
+    "tech": {
+      "env": "Linux, StarCounter, MongoDB, NodeJS",
+      "tools": "MS Visual Studio, MS Load Test, Fiddler, AppDynamics"
+    },
     "time": "Jan 2018 - April 2018"
   },
   {
@@ -26,7 +32,75 @@
     "link": "http://www.skandia.se",
     "image": "https://slideplayer.no/slide/3716349/12/images/2/Skandiabanken+Norge+er+en+norsk+nettbank.jpg",
     "description": "expert at the bank and its end-user software systems. Responsible for performance test function in terms of process, planning, requirements, design and execution.",
-    "tech": "Microsoft server, MS SQL server, BizTalk, SOA, .NET, MS Load Test, API Ready, AppDynamics",
-    "time": "Jan 2018 - April 2018"
+    "tech": {
+      "env": "Microsoft server, MS SQL server, BizTalk, SOA, .NET",
+      "tools": "MS Load Test, API Ready, AppDynamics"
+    },
+    "time": "Jan 2017 - Dec 2017"
+  },
+  {
+    "id": 4,
+    "company": "Skatteverket",
+    "title": "Performance Engineer",
+    "link": "http://www.skatteverket.se",
+    "image": "https://kryptera.se/assets/uploads/2018/07/skatteverket.jpg",
+    "description": "variety of advanced systems with a high number of concurrent users. Full-time focus on planning, demand analysis, testing, optimizing, analyzing the system that receives and manages all control tasks for the entire population of Sweden.",
+    "tech": {
+      "env": "HP/UX, Linux, WebLogic server, Oracle DB, Java, BPEL",
+      "tools": "MS Load Test, HP Loadrunner, HP SiteScope, jProfiler"
+    },
+    "time": "Dec 2016 - Oct 2013"
+  },
+  {
+    "id": 5,
+    "company": "ICA IT",
+    "title": "Performance Engineer",
+    "link": "http://www.ica.se",
+    "image": "https://www.ica.se/Templates/General/Views/Images/ica-logo-share.jpg",
+    "description": "Optimization and analyzation of systems. Experts at the Test Center responsible for providing a test, test plan, script, scenario and execute tests. Each test period also includes analyze results, present it in report. ",
+    "tech": {
+      "env": "Unix, Window servers",
+      "tools": "HP Loadrunner, eg HP TruClient, Citrix, Flex, Web Services och system ClearCase, Oracle RPAS/PLM/OBIEE"
+    },
+    "time": "Sept 2013 - Sept 2011"
+  },
+  {
+    "id": 6,
+    "company": "AFA",
+    "title": "Performance Engineer",
+    "link": "http://www.afa.se",
+    "image": "https://pbs.twimg.com/profile_images/1075712962529247232/mYub1CMW.jpg",
+    "description": "responsibility for testing the newly launched customer web and a management system. Responsible for implementing Appdynamics for production monitoring.",
+    "tech": {
+      "env": "Oracle DB, Windoes server",
+      "tools": "MS Load Test"
+    },
+    "time": "Sept 2011 - Feb 2012"
+  },
+  {
+    "id": 7,
+    "company": "RSA Scandinavia performance",
+    "title": "Performance Engineer",
+    "link": "http://www.trygghansa.se",
+    "image": "https://sakochliv.se/wp-content/uploads/2018/09/RSA-logga-1.png",
+    "description": "coordinating and performing tests of the insurance systems in the Nordic countries",
+    "tech": {
+      "env": "HP/UX, Linux, WebLogic server, Oracle DB, Java, BPEL",
+      "tools": "MS Load Test, HP Loadrunner, HP SiteScope, jProfiler"
+    },
+    "time": "Feb 2011 - Jan 2012"
+  },
+  {
+    "id": 8,
+    "company": "Unibet",
+    "title": "Performance Tester",
+    "link": "http://www.unibet.se",
+    "image": "https://www.sponsoring.fr/wp-content/uploads/2018/06/Logo-unibet.jpg",
+    "description": "e-betting systems takes place in short iterations in scrum projects. The assignment also includes developing the performance test process in the organization and  introducing a new testing tool, NEO Load.",
+    "tech": {
+      "env": "Linux",
+      "tools": "Neo Load, App Dynamics"
+    },
+    "time": "Sept 2010 - Feb 2011"
   }
 ]

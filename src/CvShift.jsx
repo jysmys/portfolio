@@ -7,24 +7,34 @@ const CvShiftCard = (props) => {
     show = <img src={props.cv.image} alt={props.cv.company} />;
   } else if (props.value === 1) {
     show = (
-      <div className="content">
-        <h3 className="ui header">{props.cv.company}</h3>
+      <>
+        <h3 className="cvheader">{props.cv.company}</h3>
         <div className="title">
           <h4>{props.cv.title}</h4>
         </div>
-        <div className="description">{props.cv.description}</div>
-      </div>
+        <div className="description">
+          <h6>{props.cv.description}</h6>
+        </div>
+      </>
     );
   } else {
     show = (
       <>
-        <div className="tech">Tech: {props.cv.tech}</div>
+        <h3 className="cvheader">{props.cv.company}</h3>
+        <div className="tech">
+          <h6>
+            Env: {props.cv.tech.env}
+            <br />
+            Tools: {props.cv.tech.tools}
+            <br />
+          </h6>
+        </div>
         <div className="time">{props.cv.time}</div>
       </>
     );
   }
   return (
-    <button className="square" onClick={() => props.onClick()}>
+    <button className="cvshift" onClick={() => props.onClick()}>
       {show}
     </button>
   );

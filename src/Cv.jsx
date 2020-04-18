@@ -22,7 +22,7 @@ class Cv extends Component {
   handleClick(i) {
     console.log("handle the Click!");
     let index = this.state.index;
-    if (index + 1 === this.state.cvs.length) {
+    if (index + 1 === 3) {
       this.setState({ index: 0 });
     } else {
       this.setState({ index: index + 1 });
@@ -36,8 +36,8 @@ class Cv extends Component {
     if (cvs.length > 0) {
       cvLists = cvs.map((cv) => {
         return (
-          <div className="ui card" id={"cv-" + cv.id} key={cv.id}>
-            <div className="ui card">
+          <div className="cvcard" key={cv.id}>
+            <div id={"cv-" + cv.id}>
               <CvShiftCard
                 value={this.state.index}
                 cv={cv}
