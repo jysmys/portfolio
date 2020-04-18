@@ -1,0 +1,45 @@
+import React, { Component } from "react";
+import CvShift from "./CvShift";
+import axios from "axios";
+
+class Cv extends Component {
+  state = {
+    cvs: [],
+  };
+
+  componentDidMount() {
+    axios.get("./src/data/cv.json").then((response) => {
+      this.setState({
+        cvs: response.data,
+      });
+    });
+  }
+
+  // THIS PART WORKS
+
+  // render() {
+  //   const cvs = this.state.cvs;
+  //   let cvLists;
+
+  //   if (cvs.length > 0) {
+  //     cvLists = cvs.map((cv) => {
+  //       return (
+  //         <div id={"cv-" + cv.id} key={cv.id}>
+  //           <CvCard cv={cv} />
+  //         </div>
+  //       );
+  //     });
+  //   }
+
+  //   return (
+  //     <div className="ui main container">
+  //       <h2 className="ui header" id="cv-header">
+  //         My CV
+  //       </h2>
+  //       <div className="cvLists">{cvLists}</div>
+  //     </div>
+  //   );
+  // }
+}
+
+export default Cv;

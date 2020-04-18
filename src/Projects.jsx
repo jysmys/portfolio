@@ -50,7 +50,7 @@ class Projects extends Component {
           </div> */}
         {/* </div> */}
         {/* <div className="ui stackable four column grid">{projectsList}</div> */}
-        <div class="projectlist">{projectsList}</div>
+        <div className="projectlist">{projectsList}</div>
       </div>
     );
   }

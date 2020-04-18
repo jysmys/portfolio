@@ -4,16 +4,17 @@ import { UndrawDesignerLife } from "react-undraw-illustrations";
 const About = () => {
   return (
     <div className="ui main container">
-      <div class="column">
+      <div className="column">
         <h2 id="about-header" className="ui header">
           About Me
         </h2>
       </div>
       {/* <div class="ui stackable two column grid"> */}
-      <div class="column">
+      <div className="column">
         <UndrawDesignerLife primaryColor="#12283a" height="200px" />
       </div>
-      <div id="aboutMe" class="column">
+      <div id="aboutMe" className="column">
+        {/* <img src="./img/ME-PixTeller.png" alt="Me Jenny" /> */}
         {/* <p>
           With my years as a front and backend developer I understand every step
           that the consumer takes and how navigation drives sales and

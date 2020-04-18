@@ -11,6 +11,14 @@ h1 {
   text-align: center;
   line-height: 140%;
 }
+h4 {
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  color: rgb(167, 167, 167);
+  font-family: "Baloo Bhaina 2", cursive;
+  text-align: center;
+  padding-bottom: 10px;
+}
 p {
   font-size: 25px;
   letter-spacing: 0.05em;
@@ -26,7 +34,8 @@ p#footer {
   align-items: center;
 }
 #about-header,
-#projects-header {
+#projects-header,
+#cv-header {
   font-size: 45px;
   letter-spacing: 0.1em;
   text-shadow: 0 0 5px #8d7779, 0 0 15px #8d7779, 0 0 20px #8d7779,
@@ -52,6 +61,9 @@ p#footer {
   text-align: center;
   line-height: 200%;
 }
+/* h3.ui.header {
+  font-size: 25px;
+} */
 footer {
   position: fixed;
   bottom: 0;
@@ -84,21 +96,30 @@ body {
     transparent 13px
   );
 }
-.projectlist {
+.projectlist,
+.cvLists {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin: -10px;
+  /* margin: -10px; */
 }
-.projectlist > * {
+.projectlist > *,
+.cvLists > * {
+  flex: 0 50%;
+  box-sizing: border-box;
   flex: 1 1 160px;
-  margin: 20px;
+  margin: 30px;
 }
+/* .cvLists > [id^="#cv"] {
+  flex: 0 50%;
+  box-sizing: border-box;
+} */
 .ui.card {
   background: #222;
   box-shadow: 0 1px 3px 0 #4d4d4e, 0 0 0 1px #4d4d4e;
   border-top: 1px solid rgba(34, 36, 38, 0.1);
+  width: 300px;
 }
 .ui.card > .content > .description,
 .ui.card > .content > .header {
@@ -108,4 +129,8 @@ body {
 }
 .ui.card > .content > .header {
   text-shadow: 0 0 5px #8d7779;
+}
+button,
+img {
+  width: inherit;
 }

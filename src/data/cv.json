@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "company": "Svenska Spel",
+    "link": "http://www.svenskaspel.se",
+    "image": "http://om.svenskaspel.se/wp-content/uploads/2019/01/omslag_koncernen.jpg",
+    "title": "Performance Engineer",
+    "description": "expert to set up and execute tests to secure the new release of the licence company and the new platform of marketplace, play toghether. New performance platform developed and CI tests implemented with Locust.",
+    "tech": "Linux, Kafka, MongoDb, Swagger, Jenkins,Locust, jMeter, Grafana, Kibana",
+    "time": "Sept 2018 - April 2020"
+  },
+  {
+    "id": 2,
+    "company": "Doctrin",
+    "link": "http://www.doctrin.se",
+    "image": "https://secure.meetupstatic.com/photos/event/5/0/e/3/600_467720707.jpeg",
+    "title": "Performance Engineer / APM",
+    "description": "Responsible for launching and setting up performance tests for the startup company Doctrin's web application for patients and caregivers.",
+    "tech": "Linux, StarCounter, MongoDB, NodeJS, MS Visual Studio, MS Load Test, Fiddler, AppDynamics",
+    "time": "Jan 2018 - April 2018"
+  },
+  {
+    "id": 3,
+    "company": "Skandia",
+    "title": "Performance Engineer / APM",
+    "link": "http://www.skandia.se",
+    "image": "https://slideplayer.no/slide/3716349/12/images/2/Skandiabanken+Norge+er+en+norsk+nettbank.jpg",
+    "description": "expert at the bank and its end-user software systems. Responsible for performance test function in terms of process, planning, requirements, design and execution.",
+    "tech": "Microsoft server, MS SQL server, BizTalk, SOA, .NET, MS Load Test, API Ready, AppDynamics",
+    "time": "Jan 2018 - April 2018"
+  }
+]
