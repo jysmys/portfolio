@@ -18,7 +18,6 @@ const App = () => {
         <Route exact path="/cv" component={Cv}></Route>
         <Route exact path="/projects" component={Projects}></Route>
       </Switch>
-      {/* <Hello /> */}
       <Footer />
     </div>
   );

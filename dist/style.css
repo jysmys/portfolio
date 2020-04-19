@@ -139,8 +139,8 @@ footer {
 .cvcard > * {
   width: inherit;
   height: inherit;
-  padding-bottom: 5em;
-  padding-right: 5em;
+  /* padding-bottom: 5em; */
+  /* padding-right: 5em; */
 }
 
 button,

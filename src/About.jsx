@@ -32,9 +32,8 @@ const MeText = (props) => {
           role in the projects has included test planning, requirement analysis,
           performance testing, optimization and analysis. Jenny has a great
           habit of documenting and presenting test reports in a structured and
-          professional manner. Jenny has held lectures about performance test at
-          several conferences. Masters to speak English in spoken and written
-          terms.
+          professional manner. <br />
+          Jenny has held lectures about performance test at several conferences.
         </p>
         <p>
           {/* I started my career within Volvo Cars in Belgium and since then
