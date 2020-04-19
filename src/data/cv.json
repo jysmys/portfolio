@@ -102,18 +102,5 @@
       "tools": "MS Load Test, HP Loadrunner, HP SiteScope, jProfiler"
     },
     "time": "Feb 2011 - Jan 2012"
-  },
-  {
-    "id": 8,
-    "Certificate": "ISTQB",
-    "title": "ISTQB Certified Tester",
-    "link": "",
-    "image": "https://www.readynez.com/media/1092/istqb.jpg",
-    "description": "",
-    "tech": {
-      "env": "",
-      "tools": ""
-    },
-    "time": "Feb 2011 - Jan 2012"
   }
 ]
