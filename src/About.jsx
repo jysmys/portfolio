@@ -68,7 +68,7 @@ const MeText = (props) => {
 };
 class About extends Component {
   state = {
-    text: false,
+    text: true,
   };
   handleClick() {
     console.log("BAJS");
