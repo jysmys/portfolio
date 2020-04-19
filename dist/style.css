@@ -43,7 +43,7 @@ h4 {
   padding-top: 10px;
 }
 h6 {
-  font-size: 14px;
+  font-size: 17px;
   padding: 15px;
   color: rgb(167, 167, 167);
   font-family: "Josefin Sans", sans-serif;
@@ -115,47 +115,62 @@ footer {
   display: flex;
   flex-flow: row wrap;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   align-content: center;
 }
-.projectlist > *,
-.cvcard {
+.projectlist > * {
   padding-bottom: 5em;
   padding-right: 5em;
+}
+.cvcard {
+  width: 300px;
+  height: 220px;
+  margin: 1em 0;
+  /* box-sizing: border-box; */
+  flex-flow: column;
+  /* justify-content: flex-start; */
 }
 .projectlist > * {
   align-items: stretch;
   box-sizing: border-box;
 }
 .cvcard > * {
-  box-sizing: border-box;
-  width: 300px;
-  height: 220px;
-}
-button,
-img {
   width: inherit;
   height: inherit;
+  padding-bottom: 5em;
+  padding-right: 5em;
+}
+
+button,
+img {
+  width: 300px;
+  height: 220px;
   padding: 0px;
   border-radius: 15px 50px;
   border-color: #222;
   background-color: #222;
+  opacity: 0.5;
 }
 
 button:hover,
 img:hover {
-  width: 105%;
-  height: 105%;
+  /* width: 103%;
+  height: 103%; */
   padding: 0px;
   border-radius: 15px 50px;
   border-color: #222;
   background-color: #222;
+  opacity: 1;
 }
-button:focus:valid {
-  border: none;
+button:focus:valid,
+img:focus:valid,
+.cvcard {
   outline: none;
+  border: none;
+  opacity: 1;
 }
+
 button {
   font-size: 15px;
   color: rgb(167, 167, 167);

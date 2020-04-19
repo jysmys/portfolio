@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": 0,
     "company": "Svenska Spel",
     "link": "http://www.svenskaspel.se",
     "image": "http://om.svenskaspel.se/wp-content/uploads/2019/01/omslag_koncernen.jpg",
@@ -13,7 +13,7 @@
     "time": "Sept 2018 - April 2020"
   },
   {
-    "id": 2,
+    "id": 1,
     "company": "Doctrin",
     "link": "http://www.doctrin.se",
     "image": "https://secure.meetupstatic.com/photos/event/5/0/e/3/600_467720707.jpeg",
@@ -26,7 +26,7 @@
     "time": "Jan 2018 - April 2018"
   },
   {
-    "id": 3,
+    "id": 2,
     "company": "Skandia",
     "title": "Performance Engineer / APM",
     "link": "http://www.skandia.se",
@@ -39,7 +39,7 @@
     "time": "Jan 2017 - Dec 2017"
   },
   {
-    "id": 4,
+    "id": 3,
     "company": "Skatteverket",
     "title": "Performance Engineer",
     "link": "http://www.skatteverket.se",
@@ -52,7 +52,7 @@
     "time": "Dec 2016 - Oct 2013"
   },
   {
-    "id": 5,
+    "id": 4,
     "company": "ICA IT",
     "title": "Performance Engineer",
     "link": "http://www.ica.se",
@@ -65,7 +65,7 @@
     "time": "Sept 2013 - Sept 2011"
   },
   {
-    "id": 6,
+    "id": 5,
     "company": "AFA",
     "title": "Performance Engineer",
     "link": "http://www.afa.se",
@@ -76,6 +76,19 @@
       "tools": "MS Load Test"
     },
     "time": "Sept 2011 - Feb 2012"
+  },
+  {
+    "id": 6,
+    "company": "Unibet",
+    "title": "Performance Tester",
+    "link": "http://www.unibet.se",
+    "image": "https://www.sponsoring.fr/wp-content/uploads/2018/06/Logo-unibet.jpg",
+    "description": "e-betting systems takes place in short iterations in scrum projects. The assignment also includes developing the performance test process in the organization and  introducing a new testing tool, NEO Load.",
+    "tech": {
+      "env": "Linux",
+      "tools": "Neo Load, App Dynamics"
+    },
+    "time": "Sept 2010 - Feb 2011"
   },
   {
     "id": 7,
@@ -92,15 +105,15 @@
   },
   {
     "id": 8,
-    "company": "Unibet",
-    "title": "Performance Tester",
-    "link": "http://www.unibet.se",
-    "image": "https://www.sponsoring.fr/wp-content/uploads/2018/06/Logo-unibet.jpg",
-    "description": "e-betting systems takes place in short iterations in scrum projects. The assignment also includes developing the performance test process in the organization and  introducing a new testing tool, NEO Load.",
+    "Certificate": "ISTQB",
+    "title": "ISTQB Certified Tester",
+    "link": "",
+    "image": "https://www.readynez.com/media/1092/istqb.jpg",
+    "description": "",
     "tech": {
-      "env": "Linux",
-      "tools": "Neo Load, App Dynamics"
+      "env": "",
+      "tools": ""
     },
-    "time": "Sept 2010 - Feb 2011"
+    "time": "Feb 2011 - Jan 2012"
   }
 ]

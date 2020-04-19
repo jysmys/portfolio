@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import CvShiftCard from "./CvShift";
+import CvCard from "./CvCard";
 import axios from "axios";
 
 class Cv extends Component {
@@ -8,6 +8,8 @@ class Cv extends Component {
     this.state = {
       cvs: [],
       index: 0,
+      shown: false,
+      cardid: Array(15).fill("hide"),
     };
   }
 
@@ -17,34 +19,59 @@ class Cv extends Component {
         cvs: response.data,
       });
     });
+    // const i = this.state.cvs.length;
+    // let arr = new Array(i).fill("hide");
+    // this.setState({ cardid: arr });
   }
 
-  handleClick(i) {
-    console.log("handle the Click!");
-    let index = this.state.index;
-    if (index + 1 === 3) {
-      this.setState({ index: 0 });
-    } else {
-      this.setState({ index: index + 1 });
-    }
+  handleClick(buttonid) {
+    // \!this.state.shown &&
+    // this.setState({ cardid: this.state.cardid.fill("hide") });
+    const cardid = this.state.cardid.slice();
+    cardid[buttonid] = this.state.shown ? "show" : "hide";
+    this.setState({ cardid: cardid, shown: !this.state.shown });
   }
 
-  render(i) {
+  renderButton(buttonid, cv) {
+    return (
+      <CvCard
+        cv={cv}
+        value={this.state.cardid[buttonid]}
+        onClick={() => this.handleClick(buttonid)}
+      />
+    );
+  }
+
+  render() {
     const cvs = this.state.cvs;
     let cvLists;
 
     if (cvs.length > 0) {
       cvLists = cvs.map((cv) => {
+        // if (this.state.id[this.state.index] == "focus") {
         return (
-          <div className="cvcard" key={cv.id}>
-            <div id={"cv-" + cv.id}>
-              <CvShiftCard
-                value={this.state.index}
-                cv={cv}
-                onClick={() => this.handleClick(i)}
-              />
-            </div>
+          <div
+            className="cvcard"
+            key={cv.id}
+            style={{ height: this.state.cardid[cv.id] == "show" && 600 }}
+          >
+            <div id={"cv-" + cv.id}>{this.renderButton(cv.id, cv)}</div>
           </div>
+          // <div
+          //   className="cvcard"
+          //   key={cv.id}
+          //   // style={{ height: this.state.shown && 700 }}
+          //   style={{ height: 700 }}
+          // >
+          /* <div id={"cv-" + cv.id}>
+                <CvShiftCard
+                  shown={this.state.shown}
+                  cv={cv}
+                  index={cv.id}
+                  onClick={() => this.toggle(cv.id)}
+                />
+              </div> */
+          // </div>
         );
       });
     }
@@ -60,3 +87,9 @@ class Cv extends Component {
 }
 
 export default Cv;
+
+// handleClick(i) {
+//   let index = this.state.index;
+//   index + 1 === 3     ? this.setState({ index: 0 })
+//     : this.setState({ index: index + 1 });
+// }
