@@ -16,7 +16,6 @@ const CvCard = (props) => {
           },
           "&:focus": { opacity: 1 },
         }}
-        // style={ props.value == "show" ? styleActive : styleInactive }
       />
       <div style={{ visibility: props.value == "hide" ? "hidden" : "visible" }}>
         <div className="title">

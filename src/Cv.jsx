@@ -19,14 +19,9 @@ class Cv extends Component {
         cvs: response.data,
       });
     });
-    // const i = this.state.cvs.length;
-    // let arr = new Array(i).fill("hide");
-    // this.setState({ cardid: arr });
   }
 
   handleClick(buttonid) {
-    // \!this.state.shown &&
-    // this.setState({ cardid: this.state.cardid.fill("hide") });
     const cardid = this.state.cardid.slice();
     cardid[buttonid] = this.state.shown ? "show" : "hide";
     this.setState({ cardid: cardid, shown: !this.state.shown });
@@ -48,7 +43,6 @@ class Cv extends Component {
 
     if (cvs.length > 0) {
       cvLists = cvs.map((cv) => {
-        // if (this.state.id[this.state.index] == "focus") {
         return (
           <div
             className="cvcard"
@@ -57,21 +51,6 @@ class Cv extends Component {
           >
             <div id={"cv-" + cv.id}>{this.renderButton(cv.id, cv)}</div>
           </div>
-          // <div
-          //   className="cvcard"
-          //   key={cv.id}
-          //   // style={{ height: this.state.shown && 700 }}
-          //   style={{ height: 700 }}
-          // >
-          /* <div id={"cv-" + cv.id}>
-                <CvShiftCard
-                  shown={this.state.shown}
-                  cv={cv}
-                  index={cv.id}
-                  onClick={() => this.toggle(cv.id)}
-                />
-              </div> */
-          // </div>
         );
       });
     }
@@ -87,9 +66,3 @@ class Cv extends Component {
 }
 
 export default Cv;
-
-// handleClick(i) {
-//   let index = this.state.index;
-//   index + 1 === 3     ? this.setState({ index: 0 })
-//     : this.setState({ index: index + 1 });
-// }
