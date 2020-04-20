@@ -25,7 +25,7 @@ class Cv extends Component {
     });
     axios.get("./src/data/education.json").then((eduresponse) => {
       this.setState({
-        edus: eduresponse.data,
+        ecardid: eduresponse.data,
       });
     });
   }
@@ -50,12 +50,12 @@ class Cv extends Component {
       />
     );
   }
-  renderButtonEdu(eduid, edu) {
+  renderButtonEdu(buttonid, edu) {
     return (
       <EduCvCard
         edu={edu}
-        evalue={this.state.ecardid(ebuttonid)}
-        onclick={() => this.handleClickEdu(eduid)}
+        evalue={this.state.ecardid(buttonid)}
+        onclick={() => this.handleClickEdu(buttonid)}
       />
     );
   }
@@ -79,6 +79,7 @@ class Cv extends Component {
         );
       });
     }
+
     // if (edus.length > 0) {
     //   eduLists = edus.map((edu) => {
     //     return (
@@ -100,7 +101,7 @@ class Cv extends Component {
         <h3 id="cvheader">Work places</h3>
         <div className="cvLists">{cvLists}</div>
         <h3 id="cvheader">Education</h3>
-        <div className="eduLists">{eduLists}</div>
+        {/* <div className="eduLists">Work in progress{eduLists}</div> */}
       </div>
     );
   }

@@ -1,14 +1,14 @@
 [
   {
-  "id": 0,
-  "description": "ISTQB Certified Tester",
-  "link": "",
-  "image": "https://www.readynez.com/media/1092/istqb.jpg"
-}
+    "id": 0,
+    "description": "ISTQB Certified Tester",
+    "link": "",
+    "image": "https://www.readynez.com/media/1092/istqb.jpg"
+  },
   {
-  "id": 1,
-  "description": "Bachelor degree in Machine technology, Uppsala Univerity",
-  "link": "",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/UU_logo.jpg/628px-UU_logo.jpg"
-}
+    "id": 1,
+    "description": "Bachelor degree in Machine technology, Uppsala Univerity",
+    "link": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/UU_logo.jpg/628px-UU_logo.jpg"
+  }
 ]

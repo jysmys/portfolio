@@ -111,6 +111,7 @@ footer {
   align-items: center;
 }
 .projectlist,
+.eduLists,
 .cvLists,
 #aboutMe {
   display: flex;
@@ -120,7 +121,8 @@ footer {
   align-items: center;
   align-content: center;
 }
-.projectlist > * {
+.projectlist > *,
+.eduLists {
   padding-bottom: 5em;
   padding-right: 5em;
 }
@@ -132,7 +134,8 @@ footer {
   flex-flow: column;
   /* justify-content: flex-start; */
 }
-.projectlist > * {
+.projectlist > *,
+.eduLists {
   align-items: stretch;
   box-sizing: border-box;
 }
@@ -155,8 +158,8 @@ img {
 
 button:hover,
 img:hover {
-  width: 101%;
-  height: 101%;
+  /* width: 101%;
+  height: 101%; */
   padding: 0px;
   border-radius: 15px 50px;
   border-color: #222;
