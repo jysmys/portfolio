@@ -23,9 +23,9 @@ class Cv extends Component {
         cvs: response.data,
       });
     });
-    axios.get("./src/data/education.json").then((eduresponse) => {
+    axios.get("./src/data/education.json").then((eresponse) => {
       this.setState({
-        ecardid: eduresponse.data,
+        edus: eresponse.data,
       });
     });
   }
@@ -35,10 +35,22 @@ class Cv extends Component {
     cardid[buttonid] = this.state.shown ? "show" : "hide";
     this.setState({ cardid: cardid, shown: !this.state.shown });
   }
-  handleClickEdu(buttonid) {
+
+  handleClickEdu(ebuttonid) {
+    console.log("BAJS");
     const ecardid = this.state.ecardid.slice();
-    ecardid[buttonid] = this.state.shown ? "show" : "hide";
+    ecardid[ebuttonid] = this.state.eshown ? "show" : "hide";
     this.setState({ ecardid: ecardid, eshown: !this.state.eshown });
+  }
+
+  renderButtonEdu(ebuttonid, edu) {
+    return (
+      <EduCvCard
+        edu={edu}
+        evalue={this.state.ecardid[ebuttonid]}
+        eduOnClick={() => this.handleClickEdu(ebuttonid)}
+      />
+    );
   }
 
   renderButton(buttonid, cv) {
@@ -47,15 +59,6 @@ class Cv extends Component {
         cv={cv}
         value={this.state.cardid[buttonid]}
         onClick={() => this.handleClick(buttonid)}
-      />
-    );
-  }
-  renderButtonEdu(buttonid, edu) {
-    return (
-      <EduCvCard
-        edu={edu}
-        evalue={this.state.ecardid(buttonid)}
-        onclick={() => this.handleClickEdu(buttonid)}
       />
     );
   }
@@ -80,19 +83,19 @@ class Cv extends Component {
       });
     }
 
-    // if (edus.length > 0) {
-    //   eduLists = edus.map((edu) => {
-    //     return (
-    //       <div
-    //         className="educard"
-    //         key={edu.id}
-    //         style={{ height: this.state.ecardid[edu.id] == "show" && 400 }}
-    //       >
-    //         <div id={"edu-" + edu.id}>{this.renderButtonEdu(edu.id, edu)}</div>
-    //       </div>
-    //     );
-    //   });
-    // }
+    if (edus.length > 0) {
+      eduLists = edus.map((edu) => {
+        return (
+          <div
+            className="educard"
+            key={edu.id}
+            style={{ height: this.state.ecardid[edu.id] == "show" && 400 }}
+          >
+            <div id={"edu-" + edu.id}>{this.renderButtonEdu(edu.id, edu)}</div>
+          </div>
+        );
+      });
+    }
     return (
       <div className="ui main container">
         <h2 className="ui header" id="cv-header">
@@ -101,7 +104,7 @@ class Cv extends Component {
         <h3 id="cvheader">Work places</h3>
         <div className="cvLists">{cvLists}</div>
         <h3 id="cvheader">Education</h3>
-        {/* <div className="eduLists">Work in progress{eduLists}</div> */}
+        <div className="eduLists">{eduLists}</div>
       </div>
     );
   }

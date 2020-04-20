@@ -1,11 +1,10 @@
 import React from "react";
 
 const EduCvCard = (props) => {
-  
   return (
     <button
-      className={props.edu.id}
-      onClick={() => props.onClick({ evalue: "show" })}
+      className="eduCvCard"
+      onClick={() => props.eduOnClick({ evalue: "show" })}
     >
       <img
         src={props.edu.image}
@@ -16,7 +15,9 @@ const EduCvCard = (props) => {
           "&:focus": { opacity: 1 },
         }}
       />
-      <div style={{ visibility: props.value == "hide" ? "hidden" : "visible" }}>
+      <div
+        style={{ visibility: props.evalue == "hide" ? "hidden" : "visible" }}
+      >
         <div className="description">
           <h6>{props.edu.description}</h6>
         </div>
