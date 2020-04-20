@@ -155,12 +155,11 @@ img {
 
 button:hover,
 img:hover {
-  /* width: 103%;
-  height: 103%; */
+  width: 101%;
+  height: 101%;
   padding: 0px;
   border-radius: 15px 50px;
   border-color: #222;
-  /* background-color: #222; */
   opacity: 1;
 }
 button:focus:valid,
